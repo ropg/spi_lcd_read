@@ -31,7 +31,7 @@ As you can see above, the multi-byte registers are read using two different meth
 
 * **You need the MISO wire connected.** Many board designers figured they only ever need to send pixels to the display and they did not hook up the wire for the display to talk back to the processor.
 
-* **It needs to be wired for "4-Wire 8-bit protocol".** You need the mode where there's a clock (SCK), data to the processor (MISO), data from the processor (MOSI) and a $\textsf{D}$/$\overline{\textsf{C}}$ line that indicates whether the current byte is a command or data. And a Chip Select (CS) to tell the display that we're talking to it. This is usally how it's set up, just be aware that there's a 9-bit mode with no $\textsf{D}$/$\overline{\textsf{C}}$ line and a way to do MISO and MOSI on same line, this code doesn't work with these modes.
+* **It needs to be wired for "4-Wire 8-bit protocol".** You need the mode where there's a clock (SCK), data to the processor (MISO), data from the processor (MOSI) and a DC line that indicates whether the current byte is a command or data. And a Chip Select (CS) to tell the display that we're talking to it. This is usally how it's set up, just be aware that there's a 9-bit mode with no DC line and a way to do MISO and MOSI on same line, this code doesn't work with these modes.
 
 * Single byte reads are really simple: pull low CS and DC, send the byte for the register you want to read and then pull up DC and read a byte.
 
