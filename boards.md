@@ -1,6 +1,6 @@
 # Display registers on startup
 
-For each board we simply copied the output of `read_registers.ino` from the examples directory. All this does is give us the contents of some common registers as the display just wakes up.
+For each board I simply copied the output of `read_registers.ino` from the examples directory. All this does is give us the contents of some common registers as the display just wakes up. Feel free to send me additions to the list.
 
 &nbsp;
 
