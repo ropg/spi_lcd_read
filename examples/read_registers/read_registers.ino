@@ -8,12 +8,14 @@
 #define LCD_MOSI 13  // SPI MOSI
 #define LCD_CS   15  // LCD chip select
 
+// change this if not using an ESP32: VSPI is ESP32-specific
 SPIClass spi = SPIClass(VSPI);
 SPI_LCD_READ slr;
 
 void setup() {
   Serial.begin(115200);
 
+  // pass pointer to SPI instance and pins for display
   slr.begin(&spi, LCD_SCK, LCD_MISO, LCD_MOSI, LCD_CS, LCD_DC);
   
   diag_reg("RDDID", 0x04, 3);
