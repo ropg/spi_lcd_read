@@ -84,8 +84,8 @@ void end();
 
 ## Demo
 
-`read_registers.ino` in the examples directory does exactly this and then prints to the serial port a number of registers these controllers seem to share. You might need to change the GPIO pins and how you create your SPI instance depending on your hardware. As you can see it reads the multi-byte registers using both the indexed and sequential method. 
+`read_registers.ino`, the [demo](/examples/read_registers/read_registers.ino) in the examples directory does exactly this and then prints to the serial port a number of registers these controllers seem to share. You might need to change the GPIO pins and how you create your SPI instance depending on your hardware. As you can see it reads the multi-byte registers using both the indexed and sequential method.
 
 ## Registers of different displays
 
-[Here is a small list of displays and their register values at wakeup](boards.md). These arethe ones I had in my hands to read out using this library's example. 
+[Here is a small list of displays and some common register values at wakeup](boards.md). These are the ones I had in my hands to read out using this library's example.

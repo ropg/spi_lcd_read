@@ -72,7 +72,7 @@ RDID3 (0xdc): 00
 ### CYD2USB
 
 2.8" display on ST7789
-capacitive touch
+resistive touch
 USB-C and micro-USB
 
 ```
